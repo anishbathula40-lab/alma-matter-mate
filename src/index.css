@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 25%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -26,8 +26,24 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 70% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Campus-specific design tokens */
+    --campus-primary: 210 100% 25%;
+    --campus-secondary: 195 100% 35%;
+    --campus-gradient: linear-gradient(135deg, hsl(var(--campus-primary)), hsl(var(--campus-secondary)));
+    --campus-gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(210 60% 98%));
+    
+    /* Chat interface */
+    --chat-bubble-user: 210 100% 25%;
+    --chat-bubble-ai: 210 20% 95%;
+    --chat-shadow: 0 4px 20px hsl(var(--campus-primary) / 0.1);
+    
+    /* Academic elements */
+    --academic-gold: 45 85% 55%;
+    --academic-green: 120 60% 45%;
+    --academic-red: 0 70% 55%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
