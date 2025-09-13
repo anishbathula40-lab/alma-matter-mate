@@ -1,5 +1,6 @@
 import { CampusHeader } from "@/components/CampusHeader";
 import { ChatInterface } from "@/components/ChatInterface";
+import { CampusGallery } from "@/components/CampusGallery";
 import { CampusCard } from "@/components/CampusCard";
 import { DashboardStats } from "@/components/DashboardStats";
 import { 
@@ -138,6 +139,11 @@ const Dashboard = () => {
             </h2>
             <ChatInterface />
           </div>
+        </div>
+
+        {/* Campus Gallery Section */}
+        <div className="mt-12">
+          <CampusGallery />
         </div>
 
         {/* Quick Actions */}

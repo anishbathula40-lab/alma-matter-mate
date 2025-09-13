@@ -8,45 +8,54 @@ import {
   Settings,
   Bell
 } from "lucide-react";
+import campusMainBuilding from "@/assets/campus-main-building.jpg";
 
 export const CampusHeader = () => {
   return (
-    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header 
+      className="relative bg-gradient-to-r from-campus-primary to-campus-secondary text-white shadow-lg overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.9), rgba(147, 51, 234, 0.9)), url(${campusMainBuilding})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundBlendMode: 'overlay'
+      }}
+    >
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between relative z-10">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-campus-primary to-campus-secondary rounded-lg flex items-center justify-center">
-            <BookOpen className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+            <BookOpen className="w-6 h-6 text-white" />
           </div>
-          <h1 className="text-xl font-bold bg-gradient-to-r from-campus-primary to-campus-secondary bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold text-white">
             CampusAI
           </h1>
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">
-          <Button variant="ghost" size="sm" className="text-foreground hover:text-campus-primary">
+          <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
             <Users className="w-4 h-4 mr-2" />
             Faculty
           </Button>
-          <Button variant="ghost" size="sm" className="text-foreground hover:text-campus-primary">
+          <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
             <UtensilsCrossed className="w-4 h-4 mr-2" />
             Dining
           </Button>
-          <Button variant="ghost" size="sm" className="text-foreground hover:text-campus-primary">
+          <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
             <MessageSquare className="w-4 h-4 mr-2" />
             Support
           </Button>
         </nav>
 
         <div className="flex items-center space-x-3">
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
             <Bell className="w-4 h-4" />
           </Button>
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
             <Settings className="w-4 h-4" />
           </Button>
-          <Avatar className="w-8 h-8">
+          <Avatar className="w-10 h-10 border-2 border-white/30">
             <AvatarImage src="" />
-            <AvatarFallback className="bg-campus-primary text-white text-sm">ST</AvatarFallback>
+            <AvatarFallback className="bg-white/20 text-white text-sm">ST</AvatarFallback>
           </Avatar>
         </div>
       </div>
