@@ -3,6 +3,7 @@ import { ChatInterface } from "@/components/ChatInterface";
 import { CampusGallery } from "@/components/CampusGallery";
 import { CampusCard } from "@/components/CampusCard";
 import { DashboardStats } from "@/components/DashboardStats";
+import { SubjectInfo } from "@/components/SubjectInfo";
 import { 
   BookOpen, 
   Users, 
@@ -139,6 +140,11 @@ const Dashboard = () => {
             </h2>
             <ChatInterface />
           </div>
+        </div>
+
+        {/* Subject Information Section */}
+        <div className="mt-12">
+          <SubjectInfo />
         </div>
 
         {/* Campus Gallery Section */}
